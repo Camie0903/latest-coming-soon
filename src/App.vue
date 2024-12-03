@@ -1,7 +1,7 @@
 <template>
   <div :class="['floating', { paused: isPaused }]">
     <h1>Portfolio Coming Soon</h1>
-    <p>Hi there! I'm currently building my portfolio. Stay tuned for something amazing!!</p>
+    <p>Hi there! I'm currently building my portfolio. yesStay tuned for something amazing!!</p>
     <form @submit.prevent="subscribe" class="subscribe-form">
       <input
         v-model="email"
