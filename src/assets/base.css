@@ -1,0 +1,31 @@
+:root {
+  --color-background: #8BC6EC;
+  /* Update to solid background color */
+  --color-background-soft: #8BC6EC;
+  --color-background-mute: #9599E2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #222222;
+    --color-background-soft: #282828;
+    --color-background-mute: #9599E2;
+  }
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  /* Set background gradient */
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
